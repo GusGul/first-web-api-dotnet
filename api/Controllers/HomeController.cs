@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace first_web_api_dotnet.Controllers;
 
 [ApiController]
+[Route("/")]
 public class HomeController : ControllerBase
 {
     [HttpGet]
