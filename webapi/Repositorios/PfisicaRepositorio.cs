@@ -29,11 +29,11 @@ namespace webapi.Repositorios
                 {
                     lista.Add(new PessoaFisica
                     {
-                        Id = Convert.ToInt32(dr["id"]),
-                        Nome = dr["nome"].ToString() ?? "",
-                        Telefone = ,
-                        Email = ,
-                        Endereco = ,
+                        Id = Convert.ToInt32(dr["Id"]),
+                        Nome = dr["Nome"].ToString() ?? "",
+                        Telefone = dr["Telefone"].ToString() ?? "",
+                        CPF = dr["CPF"].ToString() ?? "",
+                        DataCriacao = Convert.ToDateTime(dr["DataCriacao"]),
                     });
                 }
 
